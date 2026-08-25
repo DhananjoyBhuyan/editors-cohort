@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VantaCore</title>
+    <!-- Logo on the browser tab bar -->
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/DhananjoyBhuyan/None/refs/heads/main/I'm%20done%20v2.jpg.jpeg">
+    <!-- Tailwind CSS CDN for smooth styling and responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#111827',
+                        accent: '#6366f1',
+                        accentHover: '#4f46e5',
+                        whatsapp: '#22c55e'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling and custom scrollbar */
+        html { scroll-behavior: smooth; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0b0f19; }
+        ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #374151; }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-100 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="border-b border-gray-800/60 bg-darkBg/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-300 to-indigo-500 uppercase">
+                VantaCore
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="#work" class="text-sm font-medium text-gray-400 hover:text-white transition duration-200 hidden sm:block">Our Work</a>
+                <a href="mailto:dhananjoy.bhuyan.2022@gmail.com" target="_blank" class="px-5 py-2.5 rounded-xl bg-accent hover:bg-accentHover text-sm font-semibold transition duration-300 shadow-lg shadow-indigo-500/25">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER / HERO SECTION -->
+    <header class="relative overflow-hidden border-b border-gray-800/60">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-900/20 via-transparent to-transparent pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 py-16 md:py-24 text-center relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-indigo-500/10 text-indigo-400 text-sm font-medium mb-6 border border-indigo-500/20">
+                What if your editor was an Octopus? 🐙
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                5 Brains, 500 Trillion Ideas, <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">10 Hands & Lightspeed Turnarounds</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-gray-400 text-lg md:text-xl mb-10">
+                A team of 4 adaptable video editors and 1 master thumbnail designer. When you want to show the world how good you are—you hire us.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#work" class="px-8 py-4 rounded-xl bg-accent hover:bg-accentHover font-semibold transition duration-300 shadow-lg shadow-indigo-500/25">
+                    View Our Work
+                </a>
+                <!-- team contact here -->
+                <a href="https://wa.me/918837264716" target="_blank" class="px-8 py-4 rounded-xl bg-whatsapp hover:bg-emerald-600 font-semibold transition duration-300 shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2">
+                    <span>Chat on WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- TEAM HIGHLIGHTS BANNER -->
+    <section class="py-12 bg-cardBg/20 border-b border-gray-800/60">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4">
+                <h3 class="text-2xl font-bold text-indigo-400 mb-1">Seamless</h3>
+                <p class="text-sm text-gray-400">Coordination & Teamwork</p>
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl font-bold text-indigo-400 mb-1">Insane</h3>
+                <p class="text-sm text-gray-400">Versatility Across All Styles</p>
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl font-bold text-indigo-400 mb-1">Instant</h3>
+                <p class="text-sm text-gray-400">Adaptation (You Speak, We Adapt)</p>
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl font-bold text-indigo-400 mb-1">Affordable</h3>
+                <p class="text-sm text-gray-400">Rates For Quality Content</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM MEMBER PROFILES SECTION -->
+    <section class="py-20 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet The Brains of the Octopus</h2>
+            <p class="text-gray-400">Powered by advanced tools like DaVinci Resolve, Premiere Pro, CapCut, and more.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Person 1 (Editor) -->
+            <div class="bg-cardBg border border-gray-800 rounded-2xl p-6 transition duration-300 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 flex flex-col justify-between">
+                <div>
+                    <div class="h-16 w-16 rounded-full bg-gray-800 mb-6 flex items-center justify-center text-xl font-bold text-indigo-400 border border-gray-700">PVS</div>
+                    <h3 class="text-xl font-bold mb-1">Pavithran Selvam</h3>
+                    <div class="inline-block px-2.5 py-1 bg-indigo-500/10 text-indigo-300 text-xs font-semibold rounded-md mb-3 border border-indigo-500/25">Role: Lead Editor</div>
+                    <p class="text-indigo-400 text-sm mb-4">3D Motion Graphics & Gaming Editor</p>
+                    <p class="text-gray-400 text-sm mb-6">1.5 Yrs experience, Highly advanced 3D Animation and Gaming edits. Also adaptive and can cover various styles.</p>
+                </div>
+                <div>
+                    <!-- person 1 portfolio link comes here -->
+                    <a href="https://drive.google.com/drive/folders/14VBY4lhEDKDgxigiO3n_qgJYlhJ0F3Lt" target="_blank" class="block w-full py-2.5 text-center rounded-lg bg-gray-800 hover:bg-gray-700 text-sm font-medium transition duration-200 mb-2">View Portfolio</a>
+                    <!-- person two "Ways to Contact" goes here -->
+                    <div class="text-center"><a href="https://wa.me/918837264716" target="_blank" class="text-xs text-gray-500 hover:text-gray-300">Contact via Team WhatsApp</a></div>
+                </div>
+            </div>
+
+            <!-- Person 2 (Editor) -->
+            <div class="bg-cardBg border border-gray-800 rounded-2xl p-6 transition duration-300 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 flex flex-col justify-between">
+                <div>
+                    <div class="h-16 w-16 rounded-full bg-gray-800 mb-6 flex items-center justify-center text-xl font-bold text-indigo-400 border border-gray-700">DJB</div>
+                    <h3 class="text-xl font-bold mb-1">Dhananjoy Bhuyan</h3>
+                    <div class="inline-block px-2.5 py-1 bg-indigo-500/10 text-indigo-300 text-xs font-semibold rounded-md mb-3 border border-indigo-500/25">Role: Manager, Account executive & Video Editor</div>
+                    <p class="text-indigo-400 text-sm mb-4">2 yrs experience, super fast turnover specialist,</p>
+                    <p class="text-gray-400 text-sm mb-6">Highly Versatile, Adaptive, Mastering clean cuts, sound design and engaging visual pacing for creators, experience in gaming, talking head, short-form content and motion graphics and more.</p>
+                </div>
+                <div>
+                    <!-- person 1 portfolio link comes here -->
+                    <a href="https://drive.google.com/drive/folders/1KCTkFmODURitJuexjzVC4w54pt_S9kZy?usp=drive_link" target="_blank" class="block w-full py-2.5 text-center rounded-lg bg-gray-800 hover:bg-gray-700 text-sm font-medium transition duration-200 mb-2">View Portfolio</a>
+                    <!-- person two "Ways to Contact" goes here -->
+                    <div class="text-center"><a href="https://wa.me/918837264716" target="_blank" class="text-xs text-gray-500 hover:text-gray-300">Contact via Team WhatsApp</a></div>
+                </div>
+            </div>
+
+            <!-- Person 3 (Editor) -->
+            <div class="bg-cardBg border border-gray-800 rounded-2xl p-6 transition duration-300 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 flex flex-col justify-between">
+                <div>
+                    <div class="h-16 w-16 rounded-full bg-gray-800 mb-6 flex items-center justify-center text-xl font-bold text-indigo-400 border border-gray-700">SNB</div>
+                    <h3 class="text-xl font-bold mb-1">Sunidhi Bharti</h3>
+                    <div class="inline-block px-2.5 py-1 bg-indigo-500/10 text-indigo-300 text-xs font-semibold rounded-md mb-3 border border-indigo-500/25">Role: Team Adviser & Video Editor</div>
+                    <p class="text-indigo-400 text-sm mb-4">6-7 months experience. Versatile Style Specialist</p>
+                    <p class="text-gray-400 text-sm mb-6">Versatile edits, special member of Editors Cohort. Experience with Finance video edits, motion graphics and way more.</p>
+                </div>
+                <div>
+                    <!-- person 1 portfolio link comes here -->
+                    <a href="https://sunidhihere.github.io/Video-Editor-Portfolio/" target="_blank" class="block w-full py-2.5 text-center rounded-lg bg-gray-800 hover:bg-gray-700 text-sm font-medium transition duration-200 mb-2">View Portfolio</a>
+                    <!-- person two "Ways to Contact" goes here -->
+                    <div class="text-center"><a href="https://wa.me/918837264716" target="_blank" class="text-xs text-gray-500 hover:text-gray-300">Contact via Team WhatsApp</a></div>
+                </div>
+            </div>
+
+            <!-- Person 4 (Editor) -->
+            <div class="bg-cardBg border border-gray-800 rounded-2xl p-6 transition duration-300 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 flex flex-col justify-between">
+                <div>
+                    <div class="h-16 w-16 rounded-full bg-gray-800 mb-6 flex items-center justify-center text-xl font-bold text-indigo-400 border border-gray-700">SHK</div>
+                    <h3 class="text-xl font-bold mb-1">Shriya Kundu</h3>
+                    <div class="inline-block px-2.5 py-1 bg-indigo-500/10 text-indigo-300 text-xs font-semibold rounded-md mb-3 border border-indigo-500/25">Role: Video Editor</div>
+                    <p class="text-indigo-400 text-sm mb-4">3yrs experience, smooth flow and engaging edits.</p>
+                    <p class="text-gray-400 text-sm mb-6">Girly cute edits, and professional talking head, UGC lifestyle edits and more.</p>
+                </div>
+                <div>
+                    <!-- person 1 portfolio link comes here -->
+                    <a href="https://drive.google.com/drive/folders/1kI3zJWR3juylilXl7cx2uVWt83tTX35Y" target="_blank" class="block w-full py-2.5 text-center rounded-lg bg-gray-800 hover:bg-gray-700 text-sm font-medium transition duration-200 mb-2">View Portfolio</a>
+                    <!-- person two "Ways to Contact" goes here -->
+                    <div class="text-center"><a href="https://wa.me/918837264716" target="_blank" class="text-xs text-gray-500 hover:text-gray-300">Contact via Team WhatsApp</a></div>
+                </div>
+            </div>
+
+            <!-- Person 5 (Thumbnail Designer) -->
+            <div class="bg-cardBg border border-gray-800 rounded-2xl p-6 transition duration-300 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 flex flex-col justify-between md:col-span-2 lg:col-span-2">
+                <div>
+                    <div class="h-16 w-16 rounded-full bg-gray-800 mb-6 flex items-center justify-center text-xl font-bold text-purple-400 border border-gray-700">ARH</div>
+                    <h3 class="text-xl font-bold mb-1">Anowar Hussain</h3>
+                    <div class="inline-block px-2.5 py-1 bg-indigo-500/10 text-indigo-300 text-xs font-semibold rounded-md mb-3 border border-indigo-500/25">Role: Thumbnail Designer</div>
+                    <p class="text-purple-400 text-sm mb-4">2 yrs experience, designs thumbnails people can't resist from clicking.</p>
+                    <p class="text-gray-400 text-sm mb-6">Makes viewers stop scrolling the exact moment your video appears. Dedicated to scaling your channel identity and click-through rates.</p>
+                </div>
+                <div>
+                    <!-- person 1 portfolio link comes here -->
+                    <a href="https://anowar17.framer.website/" target="_blank" class="block w-full py-2.5 text-center rounded-lg bg-gray-800 hover:bg-gray-700 text-sm font-medium transition duration-200 mb-2">View Thumbnail Portfolio</a>
+                    <!-- person two "Ways to Contact" goes here -->
+                    <div class="text-center"><a href="https://wa.me/918837264716" target="_blank" class="text-xs text-gray-500 hover:text-gray-300">Contact via Team WhatsApp</a></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VIDEO SHOWCASE GRID SECTION -->
+    <section id="work" class="py-20 bg-cardBg/30 border-y border-gray-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Some of our edits</h2>
+                <p class="text-gray-400">Versatile styles ranging from gaming, cinematic, talking head, to girly/boy-ish aesthetics(for all edits, kindly check all our portfolios from above).</p>
+            </div>
+
+            <!-- Videos Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Video Item 1 -->
+                <div class="group relative rounded-xl overflow-hidden bg-gray-900 border border-gray-800 aspect-video flex items-center justify-center">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/gBoWQIOrVl8?si=AJB9QKU_BkbSo0sH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <!-- Video Item 2 -->
+                <div class="group relative rounded-xl overflow-hidden bg-gray-900 border border-gray-800 aspect-video flex items-center justify-center">
+                    <span class="text-gray-500 text-sm group-hover:scale-105 transition duration-300">Edit not uploaded yet...</span>
+                </div>
+
+                <!-- Video Item 3 -->
+                <div class="group relative rounded-xl overflow-hidden bg-gray-900 border border-gray-800 aspect-video flex items-center justify-center">
+                    <span class="text-gray-500 text-sm group-hover:scale-105 transition duration-300">Edit not uploaded yet...</span>
+                </div>
+
+                <!-- Video Item 4 -->
+                <div class="group relative rounded-xl overflow-hidden bg-gray-900 border border-gray-800 aspect-video flex items-center justify-center">
+                    <span class="text-gray-500 text-sm group-hover:scale-105 transition duration-300">Edit not uploaded yet...</span>
+                </div>
+
+                <!-- Video Item 5 -->
+                <div class="group relative rounded-xl overflow-hidden bg-gray-900 border border-gray-800 aspect-video flex items-center justify-center">
+                    <img src="https://raw.githubusercontent.com/DhananjoyBhuyan/None/refs/heads/main/I'm%20done%20v2.jpg.jpeg" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Video Item 6 -->
+                <div class="group relative rounded-xl overflow-hidden bg-gray-900 border border-gray-800 aspect-video flex items-center justify-center">
+                    <span class="text-gray-500 text-sm group-hover:scale-105 transition duration-300">Edit not uploaded yet...</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION & CONTACT SECTION -->
+    <section id="contact" class="py-20 max-w-4xl mx-auto px-6 text-center">
+        <div class="bg-gradient-to-b from-cardBg to-gray-900 border border-gray-800 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">You speak, we deliver. Let's work together.</h2>
+            <p class="text-gray-400 mb-8 max-w-xl mx-auto">
+                Affordable rates, fast turnarounds, and top-notch coordination. Reach out directly to discuss your content.
+            </p>
+            <!-- team contact here -->
+            <a href="https://wa.me/918837264716" target="_blank" class="inline-flex items-center gap-2 px-10 py-4 rounded-xl bg-whatsapp hover:bg-emerald-600 font-semibold transition duration-300 shadow-lg shadow-emerald-500/25 text-lg text-white">
+                <span>Contact Us on WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-gray-800/60 text-center text-sm text-gray-500">
+        <p>2026 <b>VantaCore</b></p>
+    </footer>
+
+</body>
+</html>
